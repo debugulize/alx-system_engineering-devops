@@ -6,11 +6,11 @@ i="0"
 while [ $i -lt 10 ]
 do 
 
-if [ $i == 4 ]
+if [ $i -eq 4 ]
 then
  echo "bad luck"
 
-elif [ $i == 8 ]
+elif [ $i -eq 8 ]
 then 
  echo "good luck"
 
