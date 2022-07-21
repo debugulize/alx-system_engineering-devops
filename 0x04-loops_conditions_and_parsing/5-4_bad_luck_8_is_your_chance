@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-#displays bash script that loops from 1 to 10 "bad luck" for 4th loop,"good luck" for 8th loop.
+#script that loops from 1 to 10 displays bad luck for the 4th loop,displays good luck for 8th loop
 
 i="0"
 
 while [ $i -lt 10 ]
-do 
+do
 
 if [ $i -eq 4 ]
 then
@@ -17,7 +17,8 @@ then
 else
  echo "Best School"
 
-fi
- i=$((i+1))
+fi 
+ (( i++ ))
+
 done
 
