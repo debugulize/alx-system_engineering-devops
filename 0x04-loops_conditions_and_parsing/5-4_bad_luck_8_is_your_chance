@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#displays bash script that loops from 1 to 10 "bad luck" for 4th loop,"good luck" for 8th loop.
+
+i="0"
+
+while [ $i -lt 10 ];
+do 
+
+if [ $i == 4 ];
+then
+ echo "bad luck"
+
+elif [ $i == 8 ];
+then 
+ echo "good luck"
+
+else
+ echo "Best School"
+
+fi
+ i=$((i+1))
+done
