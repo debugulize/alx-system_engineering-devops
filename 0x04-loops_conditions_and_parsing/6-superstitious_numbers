@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-#displays numbers from 1 to 20 
+# Displays numbers from 1 to 20 in addition to:
+#   "bad luck from China" for the 4th iteration
+#   "bad luck from Japan" for the 9th iteration
+#   "bad luck from Italy" for the 17th loop iteration 
 
-i=1
+i=1;
 
 while [ $i -le 20 ]
 do 
