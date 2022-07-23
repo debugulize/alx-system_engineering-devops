@@ -1,24 +1,16 @@
 #!/usr/bin/env bash
-#script that loops from 1 to 10 displays bad luck for the 4th loop,displays good luck for 8th loop
-
+#loop 10 iterations and three especific conditionals
 i="0"
-
 while [ $i -lt 10 ]
 do
-
-if [ $i -eq 4 ]
-then
- echo "bad luck"
-
-elif [ $i -eq 8 ]
-then 
- echo "good luck"
-
-else
- echo "Best School"
-
-fi 
- (( i++ ))
-
+	if ((i == 3))
+	then
+		echo "bad luck"
+	elif ((i == 7))
+	then 
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((i++))
 done
-
