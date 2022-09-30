@@ -52,13 +52,11 @@ frontend www-http
 
 frontend www-https
         bind :443 ssl crt /etc/letsencrypt/live/www.debugulize.tech/haproxy.pem
-<<<<<<< HEAD
         http-request add-header X-Forwarded-Proto https
         default_backend www-backend
-=======
         reqadd X-Forwarded-Proto:\ https
         default_backend web-backend
->>>>>>> beea1a011c6672cd0e60640b7f321fa9e3b9690f
+        beea1a011c6672cd0e60640b7f321fa9e3b9690f
 
 backend www-backend
         balance  roundrobin
