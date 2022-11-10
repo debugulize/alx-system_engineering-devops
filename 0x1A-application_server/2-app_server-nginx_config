@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Configures Nginx to serve the route /airbnb-onepage/ from AirBnB_clone_v2.
 
 server {

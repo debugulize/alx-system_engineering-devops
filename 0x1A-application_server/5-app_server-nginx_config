@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Configures Nginx to serve the complete AirBnB_clone_v4 application.
 
 server {
